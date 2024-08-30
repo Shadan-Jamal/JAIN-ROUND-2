@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+    padding: 10px;
+    color: black;
+    font-size: 10px;
+    text-align: start;
+    width: 100vw;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.91);
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#text{
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+#img-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-1 img{
+    width: 300px;
+    height: 150px;
+    flex-grow: 1;
+    border-radius: 20px;
+}
+
+#context{
+    width: 50%;
+    height: 70%;
+}
+
+img:hover{
+    transition: 250ms linear;
+    animation: 250ms linear move;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(30px);
+    }
+}
